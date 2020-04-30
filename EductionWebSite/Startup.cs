@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Eduction.Data;
 using Eduction.Data.Repository;
 using Eduction.Service.Catalog.Category;
+using Eduction.Service.Catalog.Teacher;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,6 +30,7 @@ namespace EductionWeb
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddScoped<ICategoryService, CategoryService>();
+			services.AddScoped<ITeacherService, TeacherService>();
 			services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
 			services.AddDbContextPool<IApplcationDbContext, SqlServerApplicationContext>(
 			 c => c.UseSqlServer("Data Source=.;Initial Catalog=EductionDB;Integrated Security=true;")

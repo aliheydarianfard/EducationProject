@@ -17,7 +17,7 @@ namespace Eduction.Core.Domains
 		public DateTime BirthDay { get; set; }
 		public string Email { get; set; }
 		public string PhoneNumber { get; set; }
-		public int NationalCode { get; set; }
+		public String NationalCode { get; set; }
 		public string LastDegreeOfEducation { get; set; }
 		public short Sex { get; set; }
 		public virtual ICollection<Course> Courses { get; set; }

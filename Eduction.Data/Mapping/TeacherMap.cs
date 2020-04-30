@@ -13,9 +13,10 @@ namespace Eduction.Data.Mapping
 		{
 			builder.Property(p => p.FirstName).IsRequired().HasMaxLength(50);
 			builder.Property(p => p.LastName).IsRequired().HasMaxLength(50);
-			builder.Property(p => p.BirthDay).IsRequired().HasMaxLength(30);
+			builder.Property(p => p.BirthDay).IsRequired().HasMaxLength(100);
 			builder.Property(p => p.PhoneNumber).IsRequired().HasMaxLength(12);
-			builder.Property(p => p.NationalCode).IsRequired().HasMaxLength(50);
+			builder.Property(p => p.Email).IsRequired().HasMaxLength(100);
+			builder.Property(p => p.NationalCode).IsRequired().HasMaxLength(10);
 			builder.Property(p => p.LastDegreeOfEducation).IsRequired().HasMaxLength(50);
 			builder.Ignore(p => p.FullName);
 			builder.Property(p => p.CreateOn).ValueGeneratedOnAdd().HasDefaultValueSql("GetDate()");

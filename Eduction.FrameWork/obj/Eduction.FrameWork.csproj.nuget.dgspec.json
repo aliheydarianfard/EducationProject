@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {}
+    "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {}
   },
   "projects": {
-    "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
+    "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
+        "projectUniqueName": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
         "projectName": "Eduction.FrameWork",
-        "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
+        "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
         "packagesPath": "C:\\Users\\AliHF\\.nuget\\packages\\",
-        "outputPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\obj\\",
+        "outputPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

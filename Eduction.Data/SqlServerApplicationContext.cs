@@ -20,12 +20,10 @@ namespace Eduction.Data
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlServerApplicationContext).Assembly);
-
-			base.OnModelCreating(modelBuilder);
 			modelBuilder.SetCreateOn();
-		
-
+			modelBuilder.SetUpdateOn();
+			modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlServerApplicationContext).Assembly);
+			base.OnModelCreating(modelBuilder);
 		}
 		
 

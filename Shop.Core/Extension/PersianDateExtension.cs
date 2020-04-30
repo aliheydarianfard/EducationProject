@@ -7,19 +7,25 @@ namespace Eduction.Core.Extension
 {
     public static class PersianDateExtension
     {
-        public static string ToPersian(this DateTime dateTime)
+        public static string ToPersian(this string str)
         {
-            PersianCalendar persianCalendar = new PersianCalendar();
-            try
-            {
-                return persianCalendar.GetYear(dateTime) + "/" + persianCalendar.GetMonth(dateTime) + "/" + persianCalendar.GetDayOfMonth(dateTime);
+            DateTime date = Convert.ToDateTime(str);
+            PersianCalendar persian = new PersianCalendar();
+            int year = persian.GetYear(date);
+            int day = persian.GetDayOfMonth(date);
+            int month = persian.GetMonth(date);
 
-            }
-            catch (Exception ex)
-            {
-                return "";
-            }
+            return year + "/" + month + "/" + day;
+        }
+        public static string ToPersian(this DateTime date)
+        {
+   
+            PersianCalendar persian = new PersianCalendar();
+            int year = persian.GetYear(date);
+            int day = persian.GetDayOfMonth(date);
+            int month = persian.GetMonth(date);
 
+            return year + "/" + month + "/" + day;
         }
         public static DateTime PersianToDateTime(this string date)
         {

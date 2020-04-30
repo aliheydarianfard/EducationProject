@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\My Appliction\\Web\\EductionWebSite\\EductionWebSite\\EductionWeb.csproj": {}
+    "F:\\My Appliction\\Web\\EducationProject\\EductionWebSite\\EductionWeb.csproj": {}
   },
   "projects": {
-    "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj": {
+    "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj",
+        "projectUniqueName": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj",
         "projectName": "Eduction.Data",
-        "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj",
+        "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj",
         "packagesPath": "C:\\Users\\AliHF\\.nuget\\packages\\",
-        "outputPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\obj\\",
+        "outputPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
+    "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
+        "projectUniqueName": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
         "projectName": "Eduction.FrameWork",
-        "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
+        "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj",
         "packagesPath": "C:\\Users\\AliHF\\.nuget\\packages\\",
-        "outputPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\obj\\",
+        "outputPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -152,14 +152,14 @@
         }
       }
     },
-    "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Service\\Eduction.Service.csproj": {
+    "F:\\My Appliction\\Web\\EducationProject\\Eduction.Service\\Eduction.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Service\\Eduction.Service.csproj",
+        "projectUniqueName": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Service\\Eduction.Service.csproj",
         "projectName": "Eduction.Service",
-        "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Service\\Eduction.Service.csproj",
+        "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Service\\Eduction.Service.csproj",
         "packagesPath": "C:\\Users\\AliHF\\.nuget\\packages\\",
-        "outputPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Service\\obj\\",
+        "outputPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -179,14 +179,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj"
               },
-              "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj"
               },
-              "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj"
               }
             }
           }
@@ -229,14 +229,14 @@
         }
       }
     },
-    "F:\\My Appliction\\Web\\EductionWebSite\\EductionWebSite\\EductionWeb.csproj": {
+    "F:\\My Appliction\\Web\\EducationProject\\EductionWebSite\\EductionWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\My Appliction\\Web\\EductionWebSite\\EductionWebSite\\EductionWeb.csproj",
+        "projectUniqueName": "F:\\My Appliction\\Web\\EducationProject\\EductionWebSite\\EductionWeb.csproj",
         "projectName": "EductionWeb",
-        "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\EductionWebSite\\EductionWeb.csproj",
+        "projectPath": "F:\\My Appliction\\Web\\EducationProject\\EductionWebSite\\EductionWeb.csproj",
         "packagesPath": "C:\\Users\\AliHF\\.nuget\\packages\\",
-        "outputPath": "F:\\My Appliction\\Web\\EductionWebSite\\EductionWebSite\\obj\\",
+        "outputPath": "F:\\My Appliction\\Web\\EducationProject\\EductionWebSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -256,17 +256,17 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Data\\Eduction.Data.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj"
               },
-              "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.FrameWork\\Eduction.FrameWork.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.FrameWork\\Eduction.FrameWork.csproj"
               },
-              "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Service\\Eduction.Service.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Eduction.Service\\Eduction.Service.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Eduction.Service\\Eduction.Service.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Service\\Eduction.Service.csproj"
               },
-              "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj": {
-                "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj"
+              "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj"
               }
             }
           }
@@ -309,14 +309,14 @@
         }
       }
     },
-    "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj": {
+    "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj",
+        "projectUniqueName": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj",
         "projectName": "Eduction.Core",
-        "projectPath": "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\Eduction.Core.csproj",
+        "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj",
         "packagesPath": "C:\\Users\\AliHF\\.nuget\\packages\\",
-        "outputPath": "F:\\My Appliction\\Web\\EductionWebSite\\Shop.Core\\obj\\",
+        "outputPath": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
