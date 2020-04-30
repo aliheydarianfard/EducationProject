@@ -1,0 +1,12 @@
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.csprojAssemblyReference.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.csproj.CoreCompileInputs.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.AssemblyInfo.cs
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netstandard2.0\Eduction.Data.deps.json
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netstandard2.0\Eduction.Data.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netstandard2.0\Eduction.Data.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netstandard2.0\Eduction.Core.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netstandard2.0\Eduction.Core.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.csproj.CopyComplete
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netstandard2.0\Eduction.Data.pdb

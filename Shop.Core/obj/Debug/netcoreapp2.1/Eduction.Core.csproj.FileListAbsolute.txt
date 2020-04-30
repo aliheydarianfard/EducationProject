@@ -1,0 +1,7 @@
+F:\My Appliction\Web\EductionWebSite\Shop.Core\bin\Debug\netcoreapp2.1\Eduction.Core.deps.json
+F:\My Appliction\Web\EductionWebSite\Shop.Core\bin\Debug\netcoreapp2.1\Eduction.Core.dll
+F:\My Appliction\Web\EductionWebSite\Shop.Core\bin\Debug\netcoreapp2.1\Eduction.Core.pdb
+F:\My Appliction\Web\EductionWebSite\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EductionWebSite\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.AssemblyInfo.cs
+F:\My Appliction\Web\EductionWebSite\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.dll
+F:\My Appliction\Web\EductionWebSite\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.pdb

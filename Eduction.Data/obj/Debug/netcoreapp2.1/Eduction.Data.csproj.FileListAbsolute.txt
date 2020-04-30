@@ -1,0 +1,13 @@
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Data.deps.json
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Data.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Data.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Core.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Core.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netcoreapp2.1\Eduction.Data.csprojAssemblyReference.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netcoreapp2.1\Eduction.Data.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netcoreapp2.1\Eduction.Data.AssemblyInfo.cs
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netcoreapp2.1\Eduction.Data.csproj.CopyComplete
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netcoreapp2.1\Eduction.Data.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\obj\Debug\netcoreapp2.1\Eduction.Data.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Data.runtimeconfig.json
+F:\My Appliction\Web\EductionWebSite\Eduction.Data\bin\Debug\netcoreapp2.1\Eduction.Data.runtimeconfig.dev.json

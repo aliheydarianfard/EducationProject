@@ -1,0 +1,84 @@
+﻿
+@model Eduction.Service.DTOs.Category.CategoryListItemDTO;
+@{
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+<!DOCTYPE html>
+
+
+
+ 
+<div style="width:100%;margin:10px auto;">
+    <i class="fa fa-codepen"> <span>مدیریت دسته ها</span> </i>
+    <hr />
+
+    <form class="form-inline" asp-controller="Category" asp-action="List" method="get">
+
+        <input class="form-control" placeholder="در دسته ها جستجو کن" asp-for="CategorySearchName">
+        <button type="submit" id="SearchButton" class="btn btn-primary">جستجو</button>
+    </form>
+    <div style="float:left">
+
+        <a class="btn-link" asp-controller="Category" asp-action="Create">ثبت جدید </a>
+    </div>
+    <table class="table table-bordered table-hover text-center">
+        <thead>
+
+            <tr>
+                <td>عنوان</td>
+                <td>شرح</td>
+                <td>حذف</td>
+                <td>ویرایش</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.categories)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td><a class="btn-link" asp-controller="Category" asp-action="Remove" asp-route-id="@item.ID">حذف</a></td>
+                    <td><a class="btn-link" asp-controller="Category" asp-action="Create" asp-route-id="@item.ID">ویرایش</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div style="margin-right:45%">
+        <row >
+
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </row>
+    </div>
+</div>
+
+
+<style>
+    #CategorySearchName {
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+    #SearchButton {
+        margin-bottom: 5px
+    }
+</style>

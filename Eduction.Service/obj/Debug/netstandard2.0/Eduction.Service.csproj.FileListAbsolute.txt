@@ -1,0 +1,9 @@
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\bin\Debug\netstandard2.0\Eduction.Service.deps.json
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\bin\Debug\netstandard2.0\Eduction.Service.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\bin\Debug\netstandard2.0\Eduction.Service.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netstandard2.0\Eduction.Service.csproj.CoreCompileInputs.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netstandard2.0\Eduction.Service.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netstandard2.0\Eduction.Service.AssemblyInfo.cs
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netstandard2.0\Eduction.Service.dll
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netstandard2.0\Eduction.Service.pdb
+F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netstandard2.0\Eduction.Service.csprojAssemblyReference.cache
