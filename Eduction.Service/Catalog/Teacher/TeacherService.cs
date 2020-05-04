@@ -29,6 +29,10 @@ namespace Eduction.Service.Catalog.Teacher
             return dto;
 
         }
+        public IEnumerable<Eduction.Core.Domains.Teacher> SearchAllTeacher()
+        {
+            return _teacherRepository.Table;
+        }
         public async Task<Eduction.Core.Domains.Teacher> SearchTeacherByIdAsync(int? id)
         {
             var teacher = await _teacherRepository.GetByIdAsync(id);

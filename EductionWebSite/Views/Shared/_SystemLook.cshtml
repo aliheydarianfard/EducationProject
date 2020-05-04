@@ -1,0 +1,47 @@
+﻿@model Eduction.Service.DTOs.Index.IndexDTO;
+<style>
+    .infodiv {
+        border: 1px solid gray;
+        height: 150px;
+        margin-right: 1%;
+        background-image: linear-gradient(to right, #005C97, #363795 )
+    }
+
+        .infodiv h5 {
+            margin-top: 10%;
+            color: white;
+        }
+
+        .infodiv h4 {
+            margin-top: 10%;
+            color: white;
+        }
+        .infodiv:hover {
+            background-image: linear-gradient(to right,#363795,#005C97 )
+        }
+      }
+</style>
+<caption-view asp-title="سیستم در نگاه"></caption-view>
+<div class="container">
+    <div class="row">
+            <div class="col text-center infodiv">
+                
+        <a href="/Category/List">
+                <h5>تعداد دسته بندی ها<i></i></h5>
+        </a>
+        <h4>@Model.CategoryCount</h4>
+                
+    </div>
+        <div class="col text-center infodiv">
+            <a href="/Teacher/List"> <h5>تعداد اساتید</h5></a>
+            <h4>@Model.TeacherCount</h4>
+        </div>
+        <div class="col text-center infodiv">
+            <a href="/Course/List">
+            <h5>تعداد دوره های آموزشی</h5>
+            <h4>@Model.CourseCount</h4>
+            </a>
+        </div>
+       
+    </div>
+</div>

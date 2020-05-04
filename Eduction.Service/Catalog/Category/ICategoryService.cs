@@ -9,8 +9,11 @@ namespace Eduction.Service.Catalog.Category
         Task<bool> IsExistCategoryAsync(int id);
         Task<CategoryDTO> RegisterCategoryAsync(CategoryDTO categoryDTO);
         Task RemoveCategoryAsync(int id);
-        Task<CategoryListItemDTO> SearchCategoryAsync(string _CategorySearchName);
+        IEnumerable<Eduction.Core.Domains.Category> SearchAllCategoryAsync();
         Task<Core.Domains.Category> SearchCategoryByIdAsync(int? id);
         Task UpdateCategoryAsync(CategoryDTO categoryDTO);
+        Task<CategoryListItemDTO> SearchCategoryAsync(string _CategorySearchName);
+
+
     }
 }

@@ -27,9 +27,7 @@ namespace Eduction.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreateOn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GetDate()");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -54,7 +52,7 @@ namespace Eduction.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CategoryID")
+                    b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
                     b.Property<string>("Code")
@@ -73,6 +71,9 @@ namespace Eduction.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("EnglishName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Languge")
                         .HasColumnType("nvarchar(max)");
 
@@ -86,7 +87,7 @@ namespace Eduction.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int?>("TeacherID")
+                    b.Property<int>("TeacherID")
                         .HasColumnType("int");
 
                     b.Property<string>("Time")
@@ -118,7 +119,7 @@ namespace Eduction.Data.Migrations
 
                     b.Property<DateTime>("BirthDay")
                         .HasColumnType("datetime2")
-                        .HasMaxLength(30);
+                        .HasMaxLength(100);
 
                     b.Property<DateTime>("CreateOn")
                         .ValueGeneratedOnAdd()
@@ -126,7 +127,9 @@ namespace Eduction.Data.Migrations
                         .HasDefaultValueSql("GetDate()");
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -143,9 +146,10 @@ namespace Eduction.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int>("NationalCode")
-                        .HasColumnType("int")
-                        .HasMaxLength(50);
+                    b.Property<string>("NationalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -190,11 +194,15 @@ namespace Eduction.Data.Migrations
                 {
                     b.HasOne("Eduction.Core.Domains.Category", "Category")
                         .WithMany("Courses")
-                        .HasForeignKey("CategoryID");
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Eduction.Core.Domains.Teacher", "Teacher")
                         .WithMany("Courses")
-                        .HasForeignKey("TeacherID");
+                        .HasForeignKey("TeacherID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

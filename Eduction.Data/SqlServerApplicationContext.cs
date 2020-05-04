@@ -10,6 +10,11 @@ namespace Eduction.Data
 {
 	public class SqlServerApplicationContext: DbContext,IApplcationDbContext
 	{
+		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		//{
+		//	optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EductionDB;Integrated Security=true;");
+		//}
+
 
 		public SqlServerApplicationContext(DbContextOptions options)
 			: base(options)

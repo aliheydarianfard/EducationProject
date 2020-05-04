@@ -30,6 +30,11 @@ namespace Eduction.Service.Catalog.Category
             return dto;
 
         }
+        public IEnumerable<Eduction.Core.Domains.Category> SearchAllCategoryAsync()
+        {
+            return  _categoryRepository.Table;
+
+        }
         public async Task<Eduction.Core.Domains.Category> SearchCategoryByIdAsync(int? id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);
@@ -63,5 +68,6 @@ namespace Eduction.Service.Catalog.Category
             await _categoryRepository.DeleteAsync(category);
         }
 
+    
     }
 }

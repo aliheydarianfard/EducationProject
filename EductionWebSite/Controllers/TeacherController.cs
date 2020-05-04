@@ -18,7 +18,7 @@ namespace EductionWeb.Controllers
             _teacherService = teacherService;
         }
 
-        public  IActionResult Indec() 
+        public  IActionResult Index() 
         {
             return RedirectToAction("List");
         }

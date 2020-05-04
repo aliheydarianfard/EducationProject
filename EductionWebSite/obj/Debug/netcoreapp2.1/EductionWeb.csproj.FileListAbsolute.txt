@@ -74,3 +74,6 @@ F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Ed
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\EductionWeb.pdb
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\List.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Teacher\Create.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SystemLook.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Course\List.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Course\Create.cshtml.g.cs

@@ -11,6 +11,7 @@ namespace Eduction.Service.DTOs.Teacher
             Teachers = new List<Core.Domains.Teacher>();
         }
         public string TeacherSearchName { get; set; }
+        public int TeacherCount { get; set; }
         public List<Eduction.Core.Domains.Teacher> Teachers { get; set; }
     }
 }
