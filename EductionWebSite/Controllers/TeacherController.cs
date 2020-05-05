@@ -34,6 +34,7 @@ namespace EductionWeb.Controllers
             TeacherDTO dTO = new TeacherDTO();
          
             var teacher =await _teacherService.SearchTeacherByIdAsync(id);
+            dTO.BirthDay = DateTime.Now;
             if (teacher != null)
             {
                 dTO.FirstName = teacher.FirstName;

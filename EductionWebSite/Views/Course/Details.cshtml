@@ -1,12 +1,11 @@
 ﻿
 @model Eduction.Service.DTOs.Course.CourseDTO;
 @{
-    Layout = "~/Views/Shared/_layout.cshtml";
+    Layout = "~/Views/Shared/_LayOutHead.cshtml";
 }
 
 <div style="width:100%;margin:10px auto;">
-    <i class="fa fa-codepen"> <span>ثبت  مدرسین</span> </i>
-    <hr />
+   <caption-view asp-title="مشاهده جزییات"></caption-view>
 
     <form asp-controller="Course" asp-action="Create" method="post">
         <div class="form-group">
@@ -19,7 +18,7 @@
             <input type="text" asp-for="EnglishName" class="form-control" placeholder="نام دوره را وارد کنید">
             <span class="text-danger" asp-validation-for="EnglishName"></span>
         </div>
-      
+
         <div class="form-group">
             <label for="Languge">زبان</label>
             <input type="text" asp-for="Languge" class="form-control" placeholder="زبان را وارد کنید">
@@ -47,13 +46,13 @@
             <span class="text-danger" asp-validation-for="PublisherName"></span>
 
         </div>
-        <div >
-            <label asp-for="CategoryID">دسته آموزشی</label> <a id="CreateNewCategory">(ثبت دسته جدید)</a>
+        <div>
+            <label asp-for="CategoryID">دسته آموزشی</label>
             <select class="form-control" asp-items="@Model.Categories" asp-for="CategoryID"></select>
             <span class="text-danger" asp-validation-for="CategoryID"></span>
         </div>
-        <div class="selectdiv">
-            <label asp-for="TeacherID">مدرس</label> <a id="CreateNewTeacher">(ثبت مدرس جدید)</a>
+        <div>
+            <label asp-for="TeacherID">مدرس</label>
             <select class="form-control" asp-items="@Model.Teachers" asp-for="TeacherID"></select>
             <span class="text-danger" asp-validation-for="TeacherID"></span>
         </div>
@@ -65,40 +64,7 @@
 
         </div>
 
-
-
-        <button type="submit" class="btn btn-primary">ثبت</button>
     </form>
 
 
 </div>
-
-        <style>
-           #CreateNewCategory {
-            color:red;
-            cursor:pointer;
-            }
-            #CreateNewTeacher {
-            color:red;
-            cursor:pointer;
-            }
-        </style>
-<script>
-    window.onload = load;
-    function load()
-    {
-        assingeventTocreate();
-    }
-    function assingeventTocreate()
-    {
-        CreateNewCategory.addEventListener("click", function () {
-            OpenWindow("/Category/Create");
-         
-        });
-        
-         CreateNewTeacher.addEventListener("click", function () {
-            OpenWindow("/Teacher/Create");
-        });
-    }
-    
-</script>

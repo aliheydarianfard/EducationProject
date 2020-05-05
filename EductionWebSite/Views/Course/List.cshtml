@@ -1,5 +1,4 @@
 ﻿
-@using Eduction.Core.Extension;
 @model Eduction.Service.DTOs.Course.CourseListItemDTO;
 @{
     Layout = "~/Views/Shared/_layout.cshtml";
@@ -41,12 +40,13 @@
         .rwfilter label {
  margin-left:5px;       
         }
+ 
     </style>
     <div style="float:left">
 
         <a class="btn-link" asp-controller="Course" asp-action="Create">ثبت جدید </a>
     </div>
-    <table class="table table-bordered table-hover text-center">
+    <table id="CourseList" class="table table-bordered table-hover text-center">
         <thead class="bg-primary text-light">
 
             <tr>
@@ -69,7 +69,7 @@
             {
 
 
-                <tr>
+                <tr data-id="@item.ID">
                     <td>@item.Name</td>
                     <td>@item.EnglishName</td>
                     <td>@item.Code</td>
@@ -114,3 +114,21 @@
     </div>
 </div>
 
+<script>
+    window.onload = load;
+    function load()
+    {
+        AssingEventTotr();
+    }
+    function AssingEventTotr()
+    {
+        var _listtr = document.querySelectorAll("#CourseList tbody tr");
+        for (var i = 0; i < _listtr.length; i++)
+        {
+            _listtr[i].addEventListener("dblclick", function () {
+                var id = this.getAttribute("data-id");
+                OpenWindow("/Course/Details/" + id);
+            });
+        }
+    }
+</script>

@@ -57,6 +57,28 @@ namespace EductionWeb.Controllers
             }
             return View(dTO);
         }
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            CourseDTO dTO = new CourseDTO();
+            PaperingInfoForSelectTag(dTO);
+            var Course = await _courseService.SearchCourseByIdAsync(id);
+            if (Course != null)
+            {
+                dTO.Name = Course.Name;
+                dTO.PublisherName = Course.PublisherName;
+                dTO.Time = Course.Time;
+                dTO.Code = Course.Code;
+                dTO.Cost = Course.Cost;
+                dTO.EnglishName = Course.EnglishName;
+                dTO.Description = Course.Description;
+                dTO.Languge = Course.Languge;
+                dTO.TypeCourse = Course.TypeCourse;
+                dTO.CategoryID = Course.Category.ID;
+                dTO.TeacherID = Course.Teacher.ID;
+            }
+            return View(dTO);
+        }
         [HttpPost]
         public async Task<IActionResult> Create(CourseDTO dTO)
         {
@@ -76,7 +98,6 @@ namespace EductionWeb.Controllers
             return RedirectToAction("List");
 
         }
-
         public void PaperingInfoForSelectTag(CourseDTO dTO)
         {
             var categories = _categoryService.SearchAllCategoryAsync();
