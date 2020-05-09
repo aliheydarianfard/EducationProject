@@ -1,7 +1,7 @@
 ﻿
 @model Eduction.Service.DTOs.Category.CategoryListItemDTO;
 @{
-    Layout = "~/Views/Shared/_layout.cshtml";
+ 
     ViewBag.Title = "مشاهده دسته ها";
 }
 <!DOCTYPE html>
@@ -28,8 +28,7 @@
             <tr>
                 <td>عنوان</td>
                 <td>شرح</td>
-                <td>ویرایش</td>
-                <td>حذف</td>
+           
             </tr>
         </thead>
         <tbody id="CategoryBody">
@@ -63,17 +62,10 @@
 </div>
 
 
-@section ViewScript
-{
-    <script>
-        function Remove(id) {
-            if (!confirm("ایا عملیات انجام شود؟"))
-                return;
-            AJX.post("../Category/Remove", { "id": id }, function (data) {
-                ShowCategory();
 
-            });
-        }
+
+    <script>
+       
         window.onload = load;
         function load() {
             ShowCategory();
@@ -84,9 +76,7 @@
                 for (var i in _list) {
                     str += '<tr>';
                     str += '<td>' + _list[i].name + '</td>';
-                    str += '<td>' + _list[i].description + '</td>';
-                    str += ' <td><a class="btn-link" href="/Category/Create/' + _list[i].id + '">ویرایش</a></td>';
-                    str += ' <td><a class="btn-link" href="#"  onclick=Remove(' + _list[i].id + ') ">حذف</a></td>';
+                    str += '<td>' + _list[i].description + '</td>';             
                     str += '</tr>';
                 }
                 document.getElementById('CategoryBody').innerHTML = str;
@@ -94,7 +84,7 @@
 
         }
     </script>
-}
+
 
 
 <style>

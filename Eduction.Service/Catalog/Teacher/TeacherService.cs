@@ -23,9 +23,9 @@ namespace Eduction.Service.Catalog.Teacher
             TeacherListItemDTO dto = new TeacherListItemDTO();
             dto.TeacherSearchName = _TeacherSearchName;
             if (!string.IsNullOrEmpty(dto.TeacherSearchName))
-                dto.Teachers = await _teacherRepository.TableNoTracking.Where(p => p.LastName.Contains(dto.TeacherSearchName)).ToListAsync();
+                dto.Teachers = await _teacherRepository.TableNoTracking.Where(p => p.LastName.Contains(dto.TeacherSearchName)).OrderByDescending(o => o.ID).ToListAsync();
             else
-                dto.Teachers = await _teacherRepository.TableNoTracking.ToListAsync();
+                dto.Teachers = await _teacherRepository.TableNoTracking.OrderByDescending(o => o.ID).ToListAsync();
             return dto;
 
         }

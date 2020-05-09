@@ -12,3 +12,4 @@ F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp2.1\Eduction
 F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.AssemblyInfo.cs
 F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.dll
 F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.pdb
+F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp2.1\Eduction.Core.csprojAssemblyReference.cache

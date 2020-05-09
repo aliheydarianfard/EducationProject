@@ -2,13 +2,14 @@
 @model Eduction.Service.DTOs.Category.CategoryDTO;
 @{
     Layout = "~/Views/Shared/_layout.cshtml";
+     ViewBag.Title = "ثبت دسته جدید";
 }
 
 <div style="width:100%;margin:10px auto;">
     <i class="fa fa-codepen"> <span>ثبت دسته ها</span> </i>
     <hr />
   
-    <form asp-controller="Category" asp-action="Create" method="post">
+    <form id="FormCategory" asp-controller="Category" asp-action="Create" method="post">
         <input type="hidden" asp-for="ID" />
         <div class="form-group">
             <label asp-for="Name"></label>
@@ -19,6 +20,17 @@
             <label asp-for="Description"></label>
             <textarea class="form-control" placeholder="شرح را وارد کنید" asp-for="Description"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">ثبت</button>
+        <button type="button" onclick="Save()" class="btn btn-primary">ثبت</button>
     </form>
 </div>
+@section ViewScript
+{
+    <script>
+        function Save()
+        {
+            if (!confirm("آیا عمیات انجام شود؟"))
+                return;
+            FormCategory.submit();
+        }
+    </script>
+}

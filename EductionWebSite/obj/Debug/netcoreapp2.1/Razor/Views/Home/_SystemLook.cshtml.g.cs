@@ -77,7 +77,7 @@ using EductionWeb.Models;
 ");
             EndContext();
             BeginContext(548, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("caption-view", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a0490a0ea564150b35ac13a58343f34", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("caption-view", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd60aabac147450abfaa11c5e977c8d9", async() => {
             }
             );
             __EductionWeb_TagHelpers_CaptionViewTagHelper = CreateTagHelper<global::EductionWeb.TagHelpers.CaptionViewTagHelper>();

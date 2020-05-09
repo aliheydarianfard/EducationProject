@@ -24,9 +24,17 @@ namespace Eduction.Service.Catalog.Category
             CategoryListItemDTO dto = new CategoryListItemDTO();
             dto.CategorySearchName = _CategorySearchName;
             if (!string.IsNullOrEmpty(dto.CategorySearchName))
-               dto.categories = await _categoryRepository.TableNoTracking.Where(p => p.Name.Contains(dto.CategorySearchName)).ToListAsync();     
+               dto.categories = await _categoryRepository.TableNoTracking.Where(p => p.Name.Contains(dto.CategorySearchName)).OrderByDescending(o => o.ID).ToListAsync();     
             else
-                dto.categories = await _categoryRepository.TableNoTracking.ToListAsync();
+                dto.categories = await _categoryRepository.TableNoTracking.OrderByDescending(o => o.ID).ToListAsync();          
+            foreach (var i in dto.categories.ToList())
+            {
+                if (i.Description == null)
+                {
+                    i.Description = "";
+                }
+
+            }
             return dto;
 
         }
@@ -35,6 +43,7 @@ namespace Eduction.Service.Catalog.Category
             return  _categoryRepository.Table;
 
         }
+       
         public async Task<Eduction.Core.Domains.Category> SearchCategoryByIdAsync(int? id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);

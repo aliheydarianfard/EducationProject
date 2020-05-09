@@ -13,7 +13,5 @@ namespace Eduction.Service.Catalog.Category
         Task<Core.Domains.Category> SearchCategoryByIdAsync(int? id);
         Task UpdateCategoryAsync(CategoryDTO categoryDTO);
         Task<CategoryListItemDTO> SearchCategoryAsync(string _CategorySearchName);
-
-
     }
 }

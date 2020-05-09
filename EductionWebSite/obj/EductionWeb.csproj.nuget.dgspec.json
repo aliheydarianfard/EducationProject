@@ -217,10 +217,6 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Web.Services3": {
-              "target": "Package",
-              "version": "[3.0.0, )"
             }
           },
           "imports": [

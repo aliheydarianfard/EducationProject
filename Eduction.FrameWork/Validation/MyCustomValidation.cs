@@ -10,15 +10,18 @@ namespace Eduction.FrameWork.Validation
         string[] Swearing = { "کیر", "گوه", "آشغال", "کس کش", "کیری" };
         public override bool IsValid(object value)
         {
-            for(int i=1;i<Swearing.Length; i++)
+            for (int i = 1; i < Swearing.Length; i++)
             {
-                if (value.ToString().Contains(Swearing[i]))
+                if (value != null)
                 {
-                    ErrorMessage+= "لطفا از کلمات غیر مجاز استفاده نکنید";
-                    return false;
+                    if (value.ToString().Contains(Swearing[i]))
+                    {
+                        ErrorMessage += "لطفا از کلمات غیر مجاز استفاده نکنید";
+                        return false;
+                    }
                 }
             }
-                return true;
+            return true;
         }
     }
 }

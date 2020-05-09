@@ -13,11 +13,12 @@
     <script src="~/js/Popper.js"></script>
     <script src="~/js/DatePicker/persian-date.min.js"></script>
     <script src="~/js/DatePicker/persian-datepicker.min.js"></script>
+    <script src="~/js/MyAjax.js"></script>
     <script src="~/js/UICommon.js"></script>
     @*<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>*@
-    @*@RenderSection("ViewScript", false)*@
-    <title>صفحه اصلی</title>
+    @RenderSection("Head", false)
+    <title>@ViewBag.Title</title>
 
 </head>
 

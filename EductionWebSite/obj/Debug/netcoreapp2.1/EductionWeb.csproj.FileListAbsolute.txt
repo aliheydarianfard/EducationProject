@@ -79,3 +79,4 @@ F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Ra
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Home\_SystemLook.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayOutHead.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Course\Details.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\AdminCategory\Default.cshtml.g.cs

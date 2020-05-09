@@ -2,13 +2,14 @@
 @model Eduction.Service.DTOs.Teacher.TeacherDTO;
 @{
     Layout = "~/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "ثبت مدرس جدید";
 }
 
 <div style="width:100%;margin:10px auto;">
     <i class="fa fa-codepen"> <span>ثبت  مدرسین</span> </i>
     <hr />
 
-    <form asp-controller="Teacher" asp-action="Create" method="post">
+    <form id="FormTeacher" asp-controller="Teacher" asp-action="Create" method="post">
         <div class="form-group">
             <label for="FirstName">نام</label>
             <input type="text" asp-for="FirstName" class="form-control" placeholder="نام را وارد کنید">
@@ -57,7 +58,7 @@
 
                 <span>زن</span><input asp-for="Sex" value="2" style="margin-right:5px;" type="radio" id="rdbwoman" name="rdbsex">
             }
-             @if (Model.Sex == 2)
+            @if (Model.Sex == 2)
             {
                 <span>مرد</span><input type="radio" asp-for="Sex" value="1" id="rdbman" name="rdbsex">
 
@@ -65,19 +66,29 @@
                 <span>زن</span><input asp-for="Sex" value="2" style="margin-right:5px;" checked="checked" type="radio" id="rdbwoman" name="rdbsex">
             }
 
-            @if(Model.Sex!=1 && Model.Sex!=2)
-            { 
+            @if (Model.Sex != 1 && Model.Sex != 2)
+            {
 
-            <span>مرد</span><input value=1 type="radio" asp-for="Sex"  id="rdbman" checked="checked" name="rdbsex">
-            <span>زن</span><input value=2 type="radio" asp-for="Sex" v style="margin-right:5px;"  id="rdbwoman" name="rdbsex">
+                <span>مرد</span><input value=1 type="radio" asp-for="Sex" id="rdbman" checked="checked" name="rdbsex">
+                <span>زن</span><input value=2 type="radio" asp-for="Sex" v style="margin-right:5px;" id="rdbwoman" name="rdbsex">
             }
-            
+
 
 
 
         </div>
-        <button type="submit" class="btn btn-primary">ثبت</button>
+        <button onclick="Save()" type="button" class="btn btn-primary">ثبت</button>
     </form>
 
 
 </div>
+@section ViewScript
+{
+    <script>
+        function Save() {
+            if (!confirm("آیا عمیات انجام شود؟"))
+                return;
+            FormTeacher.submit();
+        }
+    </script>
+}

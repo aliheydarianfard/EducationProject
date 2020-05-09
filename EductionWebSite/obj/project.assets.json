@@ -3325,15 +3325,6 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
-      "Microsoft.Web.Services3/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net20/Microsoft.Web.Services3.dll": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Web.Services3.dll": {}
-        }
-      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5780,8 +5771,7 @@
           "Eduction.FrameWork": "1.0.0",
           "Mapster": "5.3.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.0.2",
-          "Microsoft.EntityFrameworkCore": "3.1.3",
-          "Microsoft.Web.Services3": "3.0.0"
+          "Microsoft.EntityFrameworkCore": "3.1.3"
         },
         "compile": {
           "bin/placeholder/Eduction.Service.dll": {}
@@ -9398,18 +9388,6 @@
         "lib/netstandard2.0/identitygeneratorfilesconfig.json",
         "microsoft.visualstudio.web.codegenerators.mvc.2.1.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
-      ]
-    },
-    "Microsoft.Web.Services3/3.0.0": {
-      "sha512": "f7TxDOPxdtxqgKma7PTUlpjeBVur9HFFvBR9UEhMU6qQiOOCG2RezmSdiMKuUlCpFB95AXoWB074ZpgCNbUupg==",
-      "type": "package",
-      "path": "microsoft.web.services3/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net20/Microsoft.Web.Services3.dll",
-        "microsoft.web.services3.3.0.0.nupkg.sha512",
-        "microsoft.web.services3.nuspec"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -15431,17 +15409,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Web.Services3 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Web.Services3",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }

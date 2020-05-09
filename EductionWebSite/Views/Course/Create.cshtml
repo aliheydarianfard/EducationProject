@@ -2,13 +2,14 @@
 @model Eduction.Service.DTOs.Course.CourseDTO;
 @{
     Layout = "~/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "ثبت دوره جدید";
 }
 
 <div style="width:100%;margin:10px auto;">
     <i class="fa fa-codepen"> <span>ثبت  مدرسین</span> </i>
     <hr />
 
-    <form asp-controller="Course" asp-action="Create" method="post">
+    <form id="FormCourse" asp-controller="Course" asp-action="Create" method="post">
         <div class="form-group">
             <label for="FirstName">نام دوره</label>
             <input type="text" asp-for="Name" class="form-control" placeholder="نام دوره را وارد کنید">
@@ -19,7 +20,7 @@
             <input type="text" asp-for="EnglishName" class="form-control" placeholder="نام دوره را وارد کنید">
             <span class="text-danger" asp-validation-for="EnglishName"></span>
         </div>
-      
+
         <div class="form-group">
             <label for="Languge">زبان</label>
             <input type="text" asp-for="Languge" class="form-control" placeholder="زبان را وارد کنید">
@@ -47,7 +48,7 @@
             <span class="text-danger" asp-validation-for="PublisherName"></span>
 
         </div>
-        <div >
+        <div>
             <label asp-for="CategoryID">دسته آموزشی</label> <a id="CreateNewCategory">(ثبت دسته جدید)</a>
             <select class="form-control" asp-items="@Model.Categories" asp-for="CategoryID"></select>
             <span class="text-danger" asp-validation-for="CategoryID"></span>
@@ -67,38 +68,51 @@
 
 
 
-        <button type="submit" class="btn btn-primary">ثبت</button>
+        <button type="button" onclick="Save()" class="btn btn-primary">ثبت</button>
     </form>
 
 
 </div>
 
-        <style>
-           #CreateNewCategory {
-            color:red;
-            cursor:pointer;
-            }
-            #CreateNewTeacher {
-            color:red;
-            cursor:pointer;
-            }
-        </style>
+<style>
+    #CreateNewCategory {
+        color: red;
+        cursor: pointer;
+    }
+
+    #CreateNewTeacher {
+        color: red;
+        cursor: pointer;
+    }
+</style>
+@section ViewScript
+{
+    <script>
+        function Save() {
+            
+            if (!confirm("آیا عمیات انجام شود؟"))
+                return;
+            FormCourse.submit();
+        }
+    </script>
+
 <script>
+
     window.onload = load;
-    function load()
-    {
+    function load() {
+      
         assingeventTocreate();
     }
-    function assingeventTocreate()
-    {
+    function assingeventTocreate() {
         CreateNewCategory.addEventListener("click", function () {
             OpenWindow("/Category/Create");
-         
+
         });
-        
-         CreateNewTeacher.addEventListener("click", function () {
+
+        CreateNewTeacher.addEventListener("click", function () {
             OpenWindow("/Teacher/Create");
         });
     }
-    
+
 </script>
+}

@@ -8,6 +8,7 @@ using EductionWeb.Models;
 using Eduction.Service.Catalog.Category;
 using Eduction.Service.DTOs.Category;
 
+
 namespace EductionWeb.Controllers
 {
     public class CategoryController : Controller
@@ -32,6 +33,13 @@ namespace EductionWeb.Controllers
         {
 
             return View(await _categoryService.SearchCategoryAsync(dTO.CategorySearchName));
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetCategory(string CategorySearchName)
+        {
+            var _list = await _categoryService.SearchCategoryAsync(CategorySearchName);     
+            var list = _list.categories.ToList();
+            return new ObjectResult(list);
         }
         [HttpGet]
         public async Task<IActionResult> Create(int? id)
@@ -66,11 +74,11 @@ namespace EductionWeb.Controllers
                 await _categoryService.RegisterCategoryAsync(DTO);
             return RedirectToAction("List");
         }
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Remove(int id)
         {
             await _categoryService.RemoveCategoryAsync(id);
-            return RedirectToAction("List");
+            return Ok();
         }
     }
 }

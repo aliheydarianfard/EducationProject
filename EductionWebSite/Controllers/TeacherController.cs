@@ -29,6 +29,14 @@ namespace EductionWeb.Controllers
             return View(await _teacherService.SearchTeacheryAsync(dTO.TeacherSearchName)); 
         }
         [HttpGet]
+        public async Task<IActionResult> GetTeachers(string TeacherSearchName)
+        {
+            var _list = await _teacherService.SearchTeacheryAsync(TeacherSearchName);
+            var list = _list.Teachers.ToList();
+            return new OkObjectResult(list);
+        }
+
+        [HttpGet]
         public async Task<IActionResult> Create(int? id)
         {
             TeacherDTO dTO = new TeacherDTO();
@@ -63,11 +71,11 @@ namespace EductionWeb.Controllers
 
 
         }
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Remove(int id)
         {
             await _teacherService.RemoveTeacherAsync(id);
-            return RedirectToAction("List");
+            return Ok();
         }
     }
 }

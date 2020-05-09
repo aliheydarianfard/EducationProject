@@ -3,6 +3,7 @@
 @model Eduction.Service.DTOs.Teacher.TeacherListItemDTO;
 @{
     Layout = "~/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "مشاهده مدرسین";
 }
 <!DOCTYPE html>
 
@@ -16,7 +17,7 @@
     <form class="form-inline" asp-controller="Teacher" asp-action="List" method="get">
 
         <input class="form-control" id="TeacherSearchName" placeholder="جستجو بر اساس نام خانوادگی " asp-for="TeacherSearchName">
-        <button type="submit" id="SearchButton" class="btn btn-primary">جستجو</button>
+        <button type="button" onclick="ShowTeacher()" id="SearchButton" class="btn btn-primary">جستجو</button>
     </form>
     <div style="float:left">
 
@@ -31,28 +32,13 @@
                 <td>شماره تلفن</td>
                 <td>کد ملی</td>
                 <td>پست الکترونیکی</td>
-                <td>آخرین مدرک تحصیلی</td>            
+                <td>آخرین مدرک تحصیلی</td>
                 <td>ویرایش</td>
                 <td>حذف</td>
             </tr>
         </thead>
-        <tbody>
-            @foreach (var item in Model.Teachers)
-            {
-                
-
-                <tr>
-                    <td>@item.FirstName</td>
-                    <td>@item.LastName</td>
-                    <td>@item.PhoneNumber</td>
-                    <td>@item.NationalCode</td>
-                    <td>@item.Email</td>
-                    <td>@item.LastDegreeOfEducation</td>
-                    <td><a class="btn-link" asp-controller="Teacher" asp-action="Create" asp-route-id="@item.ID">ویرایش</a></td>
-                    <td><a class="btn-link" asp-controller="Teacher" asp-action="Remove" asp-route-id="@item.ID">حذف</a></td>
-
-                </tr>
-            }
+        <tbody id="TeacherBody">
+           
         </tbody>
     </table>
 
@@ -82,7 +68,44 @@
     </div>
 </div>
 
+@section ViewScript
+{
+    <script>
+         function Remove(id) {
+            if (!confirm("ایا عملیات انجام شود؟"))
+                return;
+            AJX.post("../Teacher/Remove", { "id": id }, function (data) { 
+                ShowTeacher();
 
+            });
+        }
+        window.onload = load;
+        function load() {
+            ShowTeacher();
+        }
+        function ShowTeacher() {
+            AJX.get("../Teacher/GetTeachers",{ "TeacherSearchName":TeacherSearchName.value }, function (_list) {
+                var str = "";
+                for (var i in _list) {
+                    str += '<tr>';
+                    str += '<td>' + _list[i].firstName + '</td>';
+                    str += '<td>' + _list[i].lastName + '</td>';
+                    str += '<td>' + _list[i].phoneNumber + '</td>';
+                    str += '<td>' + _list[i].nationalCode + '</td>';
+                    str += '<td>' + _list[i].email + '</td>';
+                    str += '<td>' + _list[i].lastDegreeOfEducation + '</td>';
+                    str += ' <td><a class="btn-link" href="/Teacher/Create/' + _list[i].id + '">ویرایش</a></td>';
+                   str += ' <td><a class="btn-link" href="#"  onclick=Remove(' + _list[i].id + ') ">حذف</a></td>';
+                    str += '</tr>';
+                }
+                document.getElementById('TeacherBody').innerHTML = str;
+            }, "json");
+        }
+    </script>
+}
+<script>
+
+</script>
 <style>
     #TeacherSearchName {
         margin-bottom: 5px;
