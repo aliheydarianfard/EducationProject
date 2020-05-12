@@ -2,10 +2,14 @@
 using Eduction.Service.Catalog.Category;
 using Eduction.Service.DTOs.Course;
 using Eduction.Service.Extentions;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,14 +23,18 @@ namespace Eduction.Service.Catalog.Course
         private readonly IRepository<Eduction.Core.Domains.Category> _categoryRepository = null;
         private readonly IRepository<Eduction.Core.Domains.Teacher> _teacherRepository = null;
         private readonly ICategoryService _categoryService = null;
+        private readonly IHostingEnvironment _hosting;
 
-        public CourseService(IRepository<Core.Domains.Course> courseRepository, IRepository<Core.Domains.Category> categoryRepository, IRepository<Core.Domains.Teacher> teacherRepository, ICategoryService categoryService)
+        public CourseService(IRepository<Core.Domains.Course> courseRepository, IRepository<Core.Domains.Category> categoryRepository, IRepository<Core.Domains.Teacher> teacherRepository, ICategoryService categoryService, IHostingEnvironment hosting)
         {
             _courseRepository = courseRepository;
             _categoryRepository = categoryRepository;
             _teacherRepository = teacherRepository;
             _categoryService = categoryService;
+            _hosting = hosting;
         }
+
+
         #endregion
         public async Task<CourseListItemDTO> SearchCourseAsync(CourseListItemDTO dto)
         {
@@ -48,8 +56,19 @@ namespace Eduction.Service.Catalog.Course
             return category;
 
         }
-        public async Task<CourseDTO> RegisterCourseAsync(CourseDTO courseDTO)
+        public async Task<CourseDTO> RegisterCourseAsync(CourseDTO courseDTO, IFormFile files)
         {
+            
+            string name = Guid.NewGuid().ToString();
+            var path = Path.Combine(_hosting.WebRootPath, "Pictures/Course/" + name + ".jpg");
+            var patName = name + ".jpg";
+            if (files.Length > 0)
+            {
+                using (var steam = new FileStream(path, FileMode.Create))
+                {
+                    await files.CopyToAsync(steam);
+                }
+            }
             var course = courseDTO.ToEntity<Eduction.Core.Domains.Course>();
             string englishname = courseDTO.EnglishName;
 
@@ -57,6 +76,7 @@ namespace Eduction.Service.Catalog.Course
             course.Code = CodeResult;
             course.CategoryID = courseDTO.CategoryID;
             course.TeacherID = courseDTO.TeacherID;
+            course.Path = patName;
             await _courseRepository.InsertAsync(course);
             courseDTO.ID = course.ID;
             return courseDTO;

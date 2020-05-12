@@ -25,6 +25,9 @@ namespace Eduction.Service.DTOs.Course
 		public string Time { get; set; }
 		[Required(ErrorMessage ="لطفا هزینه را وارد کنید")]
 		public int Cost { get; set; }
+
+		[Required(ErrorMessage = "لطفا پوستر را وارد کنید")]
+		public string Path { get; set; }
 		public  int CategoryID { get; set; }
 		public  int TeacherID { get; set; }
 		public IList<SelectListItem> Categories { get; set; }

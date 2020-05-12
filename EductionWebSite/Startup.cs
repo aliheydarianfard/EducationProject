@@ -67,11 +67,17 @@ namespace EductionWeb
 			app.UseStaticFiles();
 			app.UseCookiePolicy();
 
-			app.UseMvc(routes =>
+			app.UseMvc(route =>
 			{
-				routes.MapRoute(
-					name: "default",
-					template: "{controller=Home}/{action=Index}/{id?}");
+				route.MapRoute("Default", "{controller}/{action}/{id?}", new { controller = "Home", action = "Index" });
+			});
+			app.UseMvc(route =>
+			{
+				route.MapRoute("AreaDefault", "{area}/{controller}/{action}/{id?}", new { area = "Admin", controller = "Home", action = "Index" });
+			});
+			app.UseMvc(route =>
+			{
+				route.MapRoute("home", "home", new { controller = "Home", action = "Index" });
 			});
 		}
 	}

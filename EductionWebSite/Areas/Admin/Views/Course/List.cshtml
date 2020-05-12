@@ -1,0 +1,139 @@
+﻿
+@model Eduction.Service.DTOs.Course.CourseListItemDTO;
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "لیست دوره ها";
+}
+
+<div style="width:100%;margin:10px auto;">
+    <caption-view asp-title="مدیریت دوره های آموزشی"></caption-view>
+    <img src="~/img/Filter1.png" />
+    <form class="form-inline" asp-controller="Course" asp-action="List" method="get">
+
+        <div class="col">
+            <div class="row rwfilter">
+                <label asp-for="CourseSearchName">نام دوره:</label>
+                <input class="form-control" id="TeacherSearchName" placeholder="جستجو بر اساس نام دوره " asp-for="CourseSearchName">
+                <label asp-for="CategoryID">دسته آموزشی:</label>
+                <select class="form-control" asp-items="@Model.Categories" asp-for="CategoryID"></select>
+                <button type="submit" id="SearchButton" class="btn btn-primary">جستجو</button>
+
+            </div>
+            <hr />
+        </div>
+    </form> 
+
+    <style>
+        #TeacherSearchName {
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        #SearchButton {
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+
+        .rwfilter label {
+            margin-left: 5px;
+        }
+        #CoursePoster {
+        width:100px;
+        height:100px;
+        }
+    </style>
+    <div style="float:left">
+
+        <a class="btn-link" asp-controller="Course" asp-action="Create">ثبت جدید </a>
+    </div>
+    <table id="CourseList" class="table table-bordered table-hover text-center">
+        <thead class="bg-primary text-light">
+
+            <tr>
+                
+                <td>پوستر </td>
+                <td>نام </td>
+                <td> نام انگلیسی</td>
+                <td>کد</td>
+                <td>انشار دهنده</td>
+                <td>زبان </td>
+                <td>نوع آموزش</td>
+                <td>زمان</td>
+                <td>هزینه</td>
+                <td>دسته</td>
+                <td>نام مدرس</td>
+                <td>ویرایش</td>
+                <td>حذف</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CourseItems)
+            {
+
+
+                <tr data-id="@item.ID">
+                    <td><img id="CoursePoster" src="~/Pictures/Course/@item.Path" /></td>
+                    <td>@item.Name</td>
+                    <td>@item.EnglishName</td>
+                    <td>@item.Code</td>
+                    <td>@item.PublisherName</td>
+                    <td>@item.Languge</td>
+                    <td>@item.TypeCourse</td>
+                    <td>@item.Time</td>
+                    <td>@item.Cost <span>تومان</span></td>
+                    <td>@item.Category.Name</td>
+                    <td>@item.Teacher.FullName</td>
+                    <td><a class="btn-link" href="/Admin/Course/Create/@item.ID">ویرایش</a></td>
+                    <td><a class="btn-link" href="/Admin/Course/Remove/@item.ID">حذف</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div style="margin-right:45%">
+        <row>
+
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </row>
+    </div>
+</div>
+
+@section ViewScript
+{
+
+    <script>
+        window.onload = load;
+        function load() {
+            AssingEventTotr();
+        }
+        function AssingEventTotr() {
+            var _listtr = document.querySelectorAll("#CourseList tbody tr");
+            for (var i = 0; i < _listtr.length; i++) {
+                _listtr[i].addEventListener("dblclick", function () {
+                    var id = this.getAttribute("data-id");
+                    OpenWindow("/Admin/Course/Details/" + id);
+                });
+            }
+        }
+    </script>
+
+}

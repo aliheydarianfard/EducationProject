@@ -82,6 +82,9 @@ namespace Eduction.Data.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
+                    b.Property<string>("Path")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PublisherName")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")

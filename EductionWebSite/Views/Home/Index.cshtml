@@ -1,9 +1,12 @@
-﻿@model Eduction.Service.DTOs.Index.IndexDTO;
-@{
+﻿@{
     Layout = "~/Views/Shared/_layout.cshtml";
 
 }
-@{
+<div class="jumbotron h3 text-center">
+    به فروشگاه ما خوش آمدید
+</div>
+<form  asp-action="SavePicAsync" asp-controller="Home" method="post"  enctype="multipart/form-data">
 
-    Html.RenderPartial("_SystemLook");
-}
+<input type="file" accept="image/*" name="files" />
+  <input type="submit"  value="ثبت"/>
+</form>

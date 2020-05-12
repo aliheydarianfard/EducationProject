@@ -1,0 +1,125 @@
+﻿
+@model Eduction.Service.DTOs.Course.CourseDTO;
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "ثبت دوره جدید";
+}
+
+<div style="width:100%;margin:10px auto;">
+    <i class="fa fa-codepen"> <span>ثبت  مدرسین</span> </i>
+    <hr />
+
+    <form id="FormCourse" asp-controller="Course" asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="FirstName">نام دوره</label>
+            <input type="text" asp-for="Name" class="form-control" placeholder="نام دوره را وارد کنید">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group">
+            <label for="FirstName">نام انگلیسی دوره</label>
+            <input type="text" asp-for="EnglishName" class="form-control" placeholder="نام دوره را وارد کنید">
+            <span class="text-danger" asp-validation-for="EnglishName"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Languge">زبان</label>
+            <input type="text" asp-for="Languge" class="form-control" placeholder="زبان را وارد کنید">
+            <span class="text-danger" asp-validation-for="Languge"></span>
+        </div>
+        <div class="form-group ">
+            <label for="Time">زمان</label>
+            <input type="text" asp-for="Time" class="form-control" placeholder="زمان را وارد کنید">
+            <span class="text-danger" asp-validation-for="Time"></span>
+        </div>
+        <div class="form-group ">
+            <label for="Cost">هزینه</label>
+            <input type="number" asp-for="Cost" class="form-control" placeholder=" هزینه وارد کنید">
+            <span class="text-danger" asp-validation-for="Cost"></span>
+
+        </div>
+        <div class="form-group ">
+            <label for="TypeCourse">نوع آموزش</label>
+            <input type="text" asp-for="TypeCourse" class="form-control" placeholder="نوع آموزش را وارد کنید">
+            <span class="text-danger" asp-validation-for="TypeCourse"></span>
+        </div>
+        <div class="form-group ">
+            <label for="PublisherName">منتشر کننده</label>
+            <input type="text" asp-for="PublisherName" class="form-control" placeholder="کد منتشر کننده را وارد کنید">
+            <span class="text-danger" asp-validation-for="PublisherName"></span>
+
+        </div>
+        <div>
+            <label asp-for="CategoryID">دسته آموزشی</label> <a id="CreateNewCategory">(ثبت دسته جدید)</a>
+            <select class="form-control" asp-items="@Model.Categories" asp-for="CategoryID"></select>
+            <span class="text-danger" asp-validation-for="CategoryID"></span>
+        </div>
+        <div class="selectdiv">
+            <label asp-for="TeacherID">مدرس</label> <a id="CreateNewTeacher">(ثبت مدرس جدید)</a>
+            <select class="form-control" asp-items="@Model.Teachers" asp-for="TeacherID"></select>
+            <span class="text-danger" asp-validation-for="TeacherID"></span>
+        </div>
+        <div class="form-group ">
+            <label for="Path">آپلود پوستر دوره</label>
+            <br />
+            <input type="file" id="pictureinput" accept="image/*" name="files" style="display:none" />
+            <i class="fa fa-upload" style="font-size:30px;cursor:pointer" onclick="return document.getElementById('pictureinput').click()"></i>
+            <span class="text-danger" asp-validation-for="Path"></span>
+        </div>
+        <div class="form-group ">
+            <label for="Description">توضیحات</label>
+            <br />
+            <textarea style="width:50%;" asp-for="Description" placeholder="  توضیحات را وارد کنید"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+
+        </div>
+
+
+
+        <button type="button" onclick="Save()" class="btn btn-primary">ثبت</button>
+    </form>
+
+
+</div>
+
+<style>
+    #CreateNewCategory {
+        color: red;
+        cursor: pointer;
+    }
+
+    #CreateNewTeacher {
+        color: red;
+        cursor: pointer;
+    }
+</style>
+@section ViewScript
+{
+    <script>
+        function Save() {
+            
+            if (!confirm("آیا عمیات انجام شود؟"))
+                return;
+            FormCourse.submit();
+        }
+    </script>
+
+<script>
+
+    window.onload = load;
+    function load() {
+      
+        assingeventTocreate();
+    }
+    function assingeventTocreate() {
+        CreateNewCategory.addEventListener("click", function () {
+            OpenWindow("/Category/Create");
+
+        });
+
+        CreateNewTeacher.addEventListener("click", function () {
+            OpenWindow("/Teacher/Create");
+        });
+    }
+
+</script>
+}

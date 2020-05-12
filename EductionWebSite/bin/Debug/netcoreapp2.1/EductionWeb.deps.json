@@ -30,7 +30,8 @@
           "Eduction.Service": "1.0.0",
           "Microsoft.AspNetCore.All": "2.1.0",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
+          "System.IO.FileSystem": "4.3.0"
         },
         "runtime": {
           "EductionWeb.dll": {}

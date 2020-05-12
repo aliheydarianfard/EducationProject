@@ -17,6 +17,7 @@ namespace Eduction.Core.Domains
 		public string TypeCourse { get; set; }
 		public string Time { get; set; }
 		public int Cost { get; set; }
+		public string Path { get; set; }
 		public virtual int CategoryID { get; set; }
 		public virtual int TeacherID { get; set; }
 		public virtual Category Category { get; set; }
