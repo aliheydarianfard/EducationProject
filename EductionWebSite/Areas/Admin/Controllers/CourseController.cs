@@ -22,6 +22,10 @@ namespace EductionWeb.Areas.Admin.Controllers
         private readonly ICourseService _courseService = null;
         private readonly ICategoryService _categoryService = null;
         private readonly ITeacherService _teacherService = null;
+
+
+
+
         private readonly IHostingEnvironment _hosting;
 
         public CourseController(ICourseService courseService, ICategoryService categoryService, ITeacherService teacherService, IHostingEnvironment hosting)
