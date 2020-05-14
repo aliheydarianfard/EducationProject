@@ -574,6 +574,20 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "PagingList/3.1.1": {
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PagingList.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/PagingList.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.7.0": {
         "runtime": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {
@@ -865,6 +879,27 @@
           "System.Threading": "4.3.0"
         }
       },
+      "Xamarin.Forms/3.1.0.583944": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
       "Eduction.Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3"
@@ -893,6 +928,7 @@
       "Eduction.FrameWork/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Runtime": "2.2.0",
+          "PagingList": "3.1.1",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
@@ -4598,6 +4634,13 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
+    "PagingList/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z7uaVnmGzM6o1ekdgWtn9ZIxYW265gJXBOC6iV1KEp5f5G2hEXD9xWgQGnE4lTOOwlFPBFFzQXFCvDoTut+Zgw==",
+      "path": "paginglist/3.1.1",
+      "hashPath": "paginglist.3.1.1.nupkg.sha512"
+    },
     "System.Collections.Immutable/1.7.0": {
       "type": "package",
       "serviceable": true,
@@ -4751,6 +4794,13 @@
       "sha512": "sha512-PnXp38O9q/2Oe4iZHMH60kinScv6QiiL2XH54Pj2t0Y6c2zKPEiAZsM/M3wBOHLNTBDFP0zfy13WN2M0qFz5jg==",
       "path": "system.security.securestring/4.3.0",
       "hashPath": "system.security.securestring.4.3.0.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.1.0.583944": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m2/JGyWjhkpkGhbII4koxfC0UcLORMfxTFfj4UA7ybLzs+MUp5IAsQo7pb6dtNxcI00GVjQcejTzSnVPz9Tsng==",
+      "path": "xamarin.forms/3.1.0.583944",
+      "hashPath": "xamarin.forms.3.1.0.583944.nupkg.sha512"
     },
     "Eduction.Core/1.0.0": {
       "type": "project",

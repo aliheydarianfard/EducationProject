@@ -14,5 +14,5 @@ namespace Eduction.Service.DTOs.Category
 		public string Name { get; set; }
 		[Display(Name="توضیحات دسته")]
 		public string Description { get; set; }
-	}
+	} 
 }

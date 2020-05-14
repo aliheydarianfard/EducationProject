@@ -50,7 +50,7 @@ namespace EductionWeb
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}
 
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+	
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
 			if (env.IsDevelopment())
@@ -59,11 +59,11 @@ namespace EductionWeb
 			}
 			else
 			{
-				app.UseExceptionHandler("/Home/Error");
+				app.UseExceptionHandler("/error");
 				app.UseHsts();
 			}
-
-			app.UseHttpsRedirection();
+			app.UseStatusCodePagesWithReExecute("/Error/GeneralError","?statusCode={0}");
+			app.UseHttpsRedirection(); 
 			app.UseStaticFiles();
 			app.UseCookiePolicy();
 
@@ -78,6 +78,10 @@ namespace EductionWeb
 			app.UseMvc(route =>
 			{
 				route.MapRoute("home", "home", new { controller = "Home", action = "Index" });
+			});
+			app.UseMvc(route =>
+			{
+				route.MapRoute("GeneralError", "error", new { controller = "Error", action = "GeneralError" });
 			});
 		}
 	}

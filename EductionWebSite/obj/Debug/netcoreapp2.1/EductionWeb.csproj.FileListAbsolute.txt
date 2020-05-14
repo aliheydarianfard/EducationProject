@@ -68,7 +68,6 @@ F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Ed
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\EductionWeb.dll
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\EductionWeb.pdb
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_layout.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Category\Create.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Category\List.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Course\Create.cshtml.g.cs
@@ -83,3 +82,5 @@ F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Ra
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Teacher\List.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp2.1\Razor\Views\Error\GeneralError.cshtml.g.cs

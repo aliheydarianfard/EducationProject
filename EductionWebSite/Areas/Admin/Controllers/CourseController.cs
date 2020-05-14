@@ -50,6 +50,7 @@ namespace EductionWeb.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Create(int? id)
         {
+            
             CourseDTO dTO = new CourseDTO();
             PaperingInfoForSelectTag(dTO);
             var Course = await _courseService.SearchCourseByIdAsync(id);
@@ -94,6 +95,7 @@ namespace EductionWeb.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CourseDTO dTO, IFormFile files)
         {
+            
             if(files!=null)
             {
             if (!files.ContentType.Contains("image"))

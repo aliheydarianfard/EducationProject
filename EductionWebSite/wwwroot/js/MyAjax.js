@@ -99,3 +99,68 @@ MyAjax.prototype.GetNewXHR = function () {
 
 
 var AJX = new MyAjax();
+
+var Upload = function (file, url, callBack, progress_id) {
+    this.file = file;
+    this.URL = url;
+    this.progress_bar_id = progress_id;
+    this.callBack = callBack;
+};
+
+Upload.prototype.getType = function () {
+    return this.file.type;
+};
+Upload.prototype.getSize = function () {
+    return this.file.size;
+};
+Upload.prototype.getName = function () {
+    return this.file.name;
+};
+Upload.prototype.devsharpUpload = function () {
+    var that = this;
+    var formData = new FormData();
+
+
+    formData.append("file", this.file, this.getName());
+    formData.append("upload_file", true);
+
+    $("#" + that.progress_bar_id + ".progress-bar").css("width", "0%");
+    $("#" + that.progress_bar_id + " span").text("0%");
+
+    $.ajax({
+        type: "POST",
+        url: that.URL,
+        xhr: function () {
+            var myXhr = $.ajaxSettings.xhr();
+            if (myXhr.upload) {
+                myXhr.upload.addEventListener('progress', function (event) {
+
+                    var percent = 0;
+                    var position = event.loaded || event.position;
+
+                    var total = event.total;
+
+
+                    if (event.lengthComputable) {
+                        percent = Math.ceil(position / total * 100);
+                    }
+                    $("#" + that.progress_bar_id + ".progress-bar").css("width", +percent + "%");
+                    $("#" + that.progress_bar_id + " span").text(percent + "%");
+                }, false);
+            }
+            return myXhr;
+        },
+        success: function (data) {
+            that.callBack(data);
+        },
+        error: function (error) {
+
+        },
+        async: true,
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        timeout: 60000
+    });
+};

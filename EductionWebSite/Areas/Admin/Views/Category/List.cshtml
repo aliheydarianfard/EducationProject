@@ -47,9 +47,9 @@
                             <span class="sr-only">Previous</span>
                         </a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a onclick="PageItem(this)" class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a onclick="PageItem(this)" class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a onclick="PageItem(this)" class="page-link" href="#">3</a></li>
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
@@ -65,6 +65,14 @@
 
 @section ViewScript
 {
+<script>
+    function PageItem(input) {
+        alert(input.innerHTML);
+    }
+    
+
+</script>
+
     <script>
         function Remove(id) {
             if (!confirm("ایا عملیات انجام شود؟"))

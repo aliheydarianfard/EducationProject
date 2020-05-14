@@ -33,7 +33,7 @@
         </div>
         <div class="form-group ">
             <label for="Cost">هزینه</label>
-            <input type="number" asp-for="Cost" class="form-control" placeholder=" هزینه وارد کنید">
+            <input type="number"  asp-for="Cost" class="form-control" placeholder=" هزینه وارد کنید">
             <span class="text-danger" asp-validation-for="Cost"></span>
 
         </div>
@@ -58,13 +58,7 @@
             <select class="form-control" asp-items="@Model.Teachers" asp-for="TeacherID"></select>
             <span class="text-danger" asp-validation-for="TeacherID"></span>
         </div>
-        <div class="form-group ">
-            <label for="Path">آپلود پوستر دوره</label>
-            <br />
-            <input type="file" id="pictureinput" accept="image/*" name="files" style="display:none" />
-            <i class="fa fa-upload" style="font-size:30px;cursor:pointer" onclick="return document.getElementById('pictureinput').click()"></i>
-            <span class="text-danger" asp-validation-for="Path"></span>
-        </div>
+
         <div class="form-group ">
             <label for="Description">توضیحات</label>
             <br />
@@ -72,7 +66,14 @@
             <span class="text-danger" asp-validation-for="Description"></span>
 
         </div>
-
+        <div class="form-group ">
+            <label id="PosterLablel" for="Path">آپلود پوستر دوره</label>
+            <br />
+            <input asp-for="Path"  type="file" id="pictureinput" accept="image/*" name="files" style="display:none" onchange="readURL(this)" />
+            <img src="~/img/Uplaodicon.png" id="ShowImage" onclick="return document.getElementById('pictureinput').click()"/>
+            <img id="Posteimg" />
+            <span class="text-danger" asp-validation-for="Path"></span>
+        </div>
 
 
         <button type="button" onclick="Save()" class="btn btn-primary">ثبت</button>
@@ -82,6 +83,24 @@
 </div>
 
 <style>
+    #PosterLablel {
+        font-size: 20px;
+    }
+
+    #Posteimg  {
+        width: 10%;
+        height: 100px;
+        margin-right:10%;
+        cursor: pointer;
+        border:1px solid rgb(0,123,255);
+    }
+
+    #ShowImage {
+        width: 70px;
+        height: 70px;
+       cursor: pointer;
+    }
+
     #CreateNewCategory {
         color: red;
         cursor: pointer;
@@ -95,31 +114,48 @@
 @section ViewScript
 {
     <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#Posteimg')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+    </script>
+    <script>
         function Save() {
-            
+
             if (!confirm("آیا عمیات انجام شود؟"))
                 return;
             FormCourse.submit();
         }
     </script>
 
-<script>
+    <script>
 
-    window.onload = load;
-    function load() {
-      
-        assingeventTocreate();
-    }
-    function assingeventTocreate() {
-        CreateNewCategory.addEventListener("click", function () {
-            OpenWindow("/Category/Create");
+        window.onload = load;
+        function load() {
 
-        });
+            assingeventTocreate();
+        }
+        function assingeventTocreate() {
+            CreateNewCategory.addEventListener("click", function () {
+                OpenWindow("/Category/Create");
 
-        CreateNewTeacher.addEventListener("click", function () {
-            OpenWindow("/Teacher/Create");
-        });
-    }
+            });
 
-</script>
+            CreateNewTeacher.addEventListener("click", function () {
+                OpenWindow("/Teacher/Create");
+            });
+        }
+
+    </script>
 }

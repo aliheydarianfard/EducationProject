@@ -90,7 +90,7 @@ namespace Eduction.Service.Catalog.Course
             course.Time = DTO.Time;
             course.EnglishName = DTO.EnglishName;
             course.Description = DTO.Description;
-            course.Cost = DTO.Cost;
+            course.Cost = Convert.ToInt32(DTO.Cost);
             course.CategoryID = DTO.CategoryID;
             course.TeacherID = DTO.TeacherID;
             course.TypeCourse = DTO.TypeCourse;
