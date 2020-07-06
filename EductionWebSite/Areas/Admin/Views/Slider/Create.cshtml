@@ -1,0 +1,45 @@
+﻿@model Eduction.Service.DTOs.Slider.SliderDTO
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "ثبت دوره جدید";
+}
+<div class="form-group ">
+    <caption-view asp-title="آپلود پوستر دوره"></caption-view>
+    <br />
+    <form asp-action="Create" asp-controller="Slider" method="post" enctype="multipart/form-data">
+    <input asp-for="Path" type="file" id="pictureinput" accept="image/*" name="files" style="display:none" onchange="readURL(this)" />
+    <img  src="~/img/Uplaodicon.png" id="ShowImage" onclick="return document.getElementById('pictureinput').click()" />
+        <br />
+  <input id="subimg" type="submit" class="btn btn-primary" value="ثبت" />
+    <hr />
+    <img id="Posteimg" />
+    </form>
+</div>
+<style>
+    #subimg {
+          margin-right:45%;
+    }
+    #ShowImage {
+    margin-right:40%;
+    }
+    #Posteimg {
+    margin-right:30%;
+    }
+</style>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Posteimg')
+                    .attr('src', e.target.result)
+                    .width(500)
+                    .height(300);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+</script>

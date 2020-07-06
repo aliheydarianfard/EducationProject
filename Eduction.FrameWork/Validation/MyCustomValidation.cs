@@ -7,7 +7,7 @@ namespace Eduction.FrameWork.Validation
 {
     public class MyCustomValidation : ValidationAttribute
     {
-        string[] Swearing = { "کیر", "گوه", "آشغال", "کس کش", "کیری" };
+        string[] Swearing = { };
         public override bool IsValid(object value)
         {
             for (int i = 1; i < Swearing.Length; i++)

@@ -1,0 +1,42 @@
+﻿@model Eduction.Service.DTOs.Slider.SliderItemDTO;
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "مشاهده دسته ها";
+}
+    <div style="width:100%;margin:10px auto;">
+        <i class="fa fa-codepen"> <span>مدیریت اسلایدر</span> </i>
+        <hr />
+        <div style="float:left">
+
+            <a class="btn-link" asp-controller="Slider" asp-action="Create">ثبت جدید </a>
+        </div>
+        <table class="table table-bordered table-hover text-center">
+            <thead class="bg-primary text-light">
+
+                <tr>
+                    <td>#</td>
+                    <td>وضعیت</td>
+                    <td>حذف</td>
+                </tr>
+            </thead>
+            <tbody id="SliderBody">
+                    @foreach (var item in Model.sliders)
+                    {
+                <tr>
+                <td id="slidertdimg"><img src="~/img/banner/@item.Path"/></td>
+                <td>فعال</td>
+                <td><a href="#">حذف</a></td>
+                </tr>
+                    }
+            </tbody>
+        </table>
+
+    </div>
+<style>
+   #SliderBody tr td img {
+    width:300px;
+    }
+    #slidertdimg {
+    width:300px
+    }
+</style>
