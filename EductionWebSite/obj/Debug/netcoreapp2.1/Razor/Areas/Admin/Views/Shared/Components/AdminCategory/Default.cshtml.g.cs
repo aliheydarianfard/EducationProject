@@ -74,12 +74,12 @@ using EductionWeb.Areas.Admin.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n\r\n\r\n\r\n<div style=\"width:100%;margin:10px auto;\">\r\n    <i class=\"fa fa-codepen\"> <span>مدیریت دسته ها</span> </i>\r\n    <hr />\r\n\r\n    ");
             EndContext();
             BeginContext(262, 312, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1e83f0004724c0d92bc0a6ba5fa85ac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19eecf0c304b4307b05eed43483c8b74", async() => {
                 BeginContext(345, 12, true);
                 WriteLiteral("\r\n\r\n        ");
                 EndContext();
                 BeginContext(357, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2c5a9cd6d0fa473a9ed301a2e4f6bfa3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1de5a2af503d49d18fdb0dc08238e442", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -128,7 +128,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral("\r\n    <div style=\"float:left\">\r\n\r\n        ");
             EndContext();
             BeginContext(616, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1858e6ff037541319dd0fd75517a583a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26b7d8e4924d4565bea5c52c0b653dcc", async() => {
                 BeginContext(682, 9, true);
                 WriteLiteral("ثبت جدید ");
                 EndContext();

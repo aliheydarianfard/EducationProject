@@ -86,9 +86,9 @@ Write(RenderSection("ViewScript", false));
             WriteLiteral("<div class=\"container-fluid\">\r\n    <div class=\"row fixed-top bg-dark\" style=\"height:50px;\">\r\n        <div class=\"col-2 text-center \">\r\n            <nav class=\"navbar navbar-dark\">\r\n                ");
             EndContext();
             BeginContext(330, 139, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5105429d6e084c8e9b2ea9698bc28740", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06d8537439e44caaaee6ef693a366838", async() => {
                 BeginContext(382, 59, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "69aa5c71882444b8ae0208f3c3ce42e1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b3e4b0b8624a4b9f8b06096f09a084cb", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -133,7 +133,7 @@ Write(RenderSection("ViewScript", false));
                 ");
             EndContext();
             BeginContext(728, 395, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ded3edecad947d686ba3e578b8872fe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b82895509a284db3b1c8a2bd5ba24b0c", async() => {
                 BeginContext(780, 336, true);
                 WriteLiteral(@"
                     <div class=""input-group"">
@@ -225,7 +225,7 @@ Write(RenderSection("ViewScript", false));
                 ");
             EndContext();
             BeginContext(4175, 309, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f9c98ab0cba41c686cb9820b04d1568", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4053e2d2a7fc435488090bcddcebe148", async() => {
                 BeginContext(4227, 250, true);
                 WriteLiteral("\r\n                    <div class=\"input-group\">\r\n                        <button class=\"btn btn-danger\">جستجو</button>\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"جستجو\">\r\n                    </div>\r\n                ");
                 EndContext();
@@ -311,7 +311,7 @@ Write(RenderSection("ViewScript", false));
             WriteLiteral("\r\n        </div>\r\n    </div>\r\n\r\n</div>\r\n");
             EndContext();
             BeginContext(6933, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0f4aec9609e04e7ba17aca3b81b83a1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d2a27438b3a84c17ae5763105d21e427", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

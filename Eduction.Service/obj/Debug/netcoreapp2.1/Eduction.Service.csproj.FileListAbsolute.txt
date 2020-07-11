@@ -13,6 +13,9 @@ F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netcoreapp2.1\Ed
 F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.csproj.CopyComplete
 F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.dll
 F:\My Appliction\Web\EductionWebSite\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.pdb
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.csprojAssemblyReference.cache
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.AssemblyInfo.cs
 F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\Eduction.Service.deps.json
 F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\Eduction.Service.dll
 F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\Eduction.Service.pdb
@@ -22,9 +25,6 @@ F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\E
 F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\Eduction.Data.pdb
 F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\Eduction.FrameWork.pdb
 F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Debug\netcoreapp2.1\Eduction.Core.pdb
-F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.csprojAssemblyReference.cache
-F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.AssemblyInfoInputs.cache
-F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.AssemblyInfo.cs
 F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.csproj.CopyComplete
 F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.dll
 F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Debug\netcoreapp2.1\Eduction.Service.pdb

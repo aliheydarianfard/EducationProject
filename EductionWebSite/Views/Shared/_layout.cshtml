@@ -1,4 +1,7 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity;
+
+@inject SignInManager<Eduction.Core.Domains.Customer> signInManager
+@inject UserManager<Eduction.Core.Domains.Customer> userManager
 <!DOCTYPE html>
 
 <html>
@@ -77,9 +80,26 @@
                                 <div class="text_wrap">
                                     <p><span style="font-family:'Times New Roman', Times, serif">ObjectGroup98@gmail.com</span></p>
                                 </div>
-                                <div class="text_wrap">
-                                    <p><a href="#"> <i class=""></i>ورود</a> <a href="#">|ثبت نام</a></p>
-                                </div>
+
+                                @if (!signInManager.IsSignedIn(User))
+                                {
+                                    <div class="identityDiv">
+                                        <p>
+                                            <a style="color: white; margin-left: 5px" href="/Admin/Account/LogIn">ورود</a>
+                                            <a style="color:white" href="/Admin/Account/Register">ثبت نام</a>
+                                        </p>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="identityDiv">
+                                        <p>
+                                            <a style="color:white;margin-left:5px;" href="#">سلام:@userManager.GetUserName(User)</a>
+                                            <a style="color:white" href="/Admin/Account/LogOut"> <i class=""></i>خروج</a>
+                                        </p>
+                                    </div>
+
+                                }
                             </div>
                         </div>
                     </div>

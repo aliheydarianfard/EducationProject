@@ -1,19 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
     <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
   </ItemGroup>
 
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Eduction.Data\Eduction.Data.csproj" />
     <ProjectReference Include="..\Eduction.FrameWork\Eduction.FrameWork.csproj" />
     <ProjectReference Include="..\Eduction.Service\Eduction.Service.csproj" />
     <ProjectReference Include="..\Shop.Core\Eduction.Core.csproj" />

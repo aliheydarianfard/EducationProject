@@ -3,7 +3,6 @@ using Eduction.Service.DTOs.Slider;
 using Eduction.Service.Extentions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

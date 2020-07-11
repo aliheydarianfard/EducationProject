@@ -60,8 +60,7 @@ namespace EductionWeb.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> ModalCreate(int? id)
         {
-           
-
+          
             return View();
         }
         [HttpPost]

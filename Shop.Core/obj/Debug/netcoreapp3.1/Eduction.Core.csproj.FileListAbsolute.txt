@@ -1,0 +1,8 @@
+F:\My Appliction\Web\EducationProject\Shop.Core\bin\Debug\netcoreapp3.1\Eduction.Core.deps.json
+F:\My Appliction\Web\EducationProject\Shop.Core\bin\Debug\netcoreapp3.1\Eduction.Core.dll
+F:\My Appliction\Web\EducationProject\Shop.Core\bin\Debug\netcoreapp3.1\Eduction.Core.pdb
+F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp3.1\Eduction.Core.csprojAssemblyReference.cache
+F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp3.1\Eduction.Core.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp3.1\Eduction.Core.AssemblyInfo.cs
+F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp3.1\Eduction.Core.dll
+F:\My Appliction\Web\EducationProject\Shop.Core\obj\Debug\netcoreapp3.1\Eduction.Core.pdb

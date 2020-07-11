@@ -1,18 +1,20 @@
 ﻿using Eduction.Core.Domains;
 using Eduction.Data.Mapping;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Eduction.Data
 {
-	public class SqlServerApplicationContext: DbContext,IApplcationDbContext
+	public class SqlServerApplicationContext: IdentityDbContext<Customer,CustomerRole,int>,IApplcationDbContext
 	{
 		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		//{
-		//	optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EductionDB;Integrated Security=true;");
+		//	optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EductionDB;Integrated Security=true;").UseLazyLoadingProxies();
 		//}
 
 
@@ -25,14 +27,12 @@ namespace Eduction.Data
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
+			
 			modelBuilder.SetCreateOn();
 			modelBuilder.SetUpdateOn();
 			modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlServerApplicationContext).Assembly);
 			base.OnModelCreating(modelBuilder);
 		}
-		
-
-
 
 	}
 }

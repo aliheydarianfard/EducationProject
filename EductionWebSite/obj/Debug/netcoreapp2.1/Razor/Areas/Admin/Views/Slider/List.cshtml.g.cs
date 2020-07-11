@@ -64,7 +64,7 @@ using EductionWeb.Areas.Admin.Models;
             WriteLiteral("    <div style=\"width:100%;margin:10px auto;\">\r\n        <i class=\"fa fa-codepen\"> <span>مدیریت اسلایدر</span> </i>\r\n        <hr />\r\n        <div style=\"float:left\">\r\n\r\n            ");
             EndContext();
             BeginContext(337, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4dd6ab027a74d3eaaa7495a26a20431", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7328654d0160447db48e34f8698527cb", async() => {
                 BeginContext(401, 9, true);
                 WriteLiteral("ثبت جدید ");
                 EndContext();
@@ -110,7 +110,7 @@ using EductionWeb.Areas.Admin.Models;
             WriteLiteral("                <tr>\r\n                <td id=\"slidertdimg\">");
             EndContext();
             BeginContext(901, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c18f29fc16f44f889822f72a3b350ad7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d9777ca06afc4f8eab53d8e9dd429fc4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
