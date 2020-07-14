@@ -46,6 +46,7 @@ namespace EductionWeb.Areas.Admin.Controllers
             var result = await userManager.CreateAsync(customer, model.Password);
             if (result.Succeeded)
             {
+                await userManager.AddToRoleAsync(customer, "Registred");
                 await signInManager.SignInAsync(customer, isPersistent: false);
                 return LocalRedirect("~/");
             }

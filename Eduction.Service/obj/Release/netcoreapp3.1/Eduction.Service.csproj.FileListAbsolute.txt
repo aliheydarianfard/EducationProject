@@ -1,0 +1,17 @@
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Service.deps.json
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Service.runtimeconfig.json
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Service.runtimeconfig.dev.json
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Service.dll
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Service.pdb
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Core.dll
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Data.dll
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.FrameWork.dll
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Data.pdb
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.FrameWork.pdb
+F:\My Appliction\Web\EducationProject\Eduction.Service\bin\Release\netcoreapp3.1\Eduction.Core.pdb
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Release\netcoreapp3.1\Eduction.Service.csprojAssemblyReference.cache
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Release\netcoreapp3.1\Eduction.Service.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Release\netcoreapp3.1\Eduction.Service.AssemblyInfo.cs
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Release\netcoreapp3.1\Eduction.Service.csproj.CopyComplete
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Release\netcoreapp3.1\Eduction.Service.dll
+F:\My Appliction\Web\EducationProject\Eduction.Service\obj\Release\netcoreapp3.1\Eduction.Service.pdb

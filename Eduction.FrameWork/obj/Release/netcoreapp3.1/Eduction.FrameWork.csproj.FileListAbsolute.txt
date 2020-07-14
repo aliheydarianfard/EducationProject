@@ -1,0 +1,8 @@
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Release\netcoreapp3.1\Eduction.FrameWork.deps.json
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Release\netcoreapp3.1\Eduction.FrameWork.dll
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Release\netcoreapp3.1\Eduction.FrameWork.pdb
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Release\netcoreapp3.1\Eduction.FrameWork.csprojAssemblyReference.cache
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Release\netcoreapp3.1\Eduction.FrameWork.AssemblyInfoInputs.cache
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Release\netcoreapp3.1\Eduction.FrameWork.AssemblyInfo.cs
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Release\netcoreapp3.1\Eduction.FrameWork.dll
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Release\netcoreapp3.1\Eduction.FrameWork.pdb

@@ -197,3 +197,5 @@ F:\My Appliction\Web\EducationProject\EductionWebSite\bin\Debug\netcoreapp3.1\zh
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Account\Register.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Account\LogIn.cshtml.g.cs
 F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp3.1\Razor\Views\Error\Lockout.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\List.cshtml.g.cs
+F:\My Appliction\Web\EducationProject\EductionWebSite\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\ManageRoles.cshtml.g.cs
