@@ -12,7 +12,7 @@ using Eduction.Service.DTOs.Category;
 namespace EductionWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoryController : Controller
+    public class CategoryController : AdminController
     {
 
         #region field
@@ -45,22 +45,15 @@ namespace EductionWeb.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Create(int? id)
         {
-            CategoryDTO dTO = new CategoryDTO();
+            CategoryDTO DTO = new CategoryDTO();
             var Category = await _categoryService.SearchCategoryByIdAsync(id);
-
             if (Category != null)
-            {
-                dTO.ID = Category.ID;
-                dTO.Name = Category.Name;
-                dTO.Description = Category.Description;
-            }
-            
-            return View(dTO);
+                DTO = await _categoryService.SearchCategoryByIdAsync(id);           
+            return View(DTO);
         }
         [HttpGet]
         public async Task<IActionResult> ModalCreate(int? id)
-        {
-          
+        {          
             return View();
         }
         [HttpPost]

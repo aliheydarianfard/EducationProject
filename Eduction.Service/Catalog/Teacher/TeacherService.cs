@@ -33,10 +33,11 @@ namespace Eduction.Service.Catalog.Teacher
         {
             return _teacherRepository.Table;
         }
-        public async Task<Eduction.Core.Domains.Teacher> SearchTeacherByIdAsync(int? id)
+        public async Task<TeacherDTO> SearchTeacherByIdAsync(int? id)
         {
             var teacher = await _teacherRepository.GetByIdAsync(id);
-            return teacher;
+            var DTO = teacher.TODTO<TeacherDTO>();
+            return DTO;
         }
         public async Task UpdateCategoryAsync(TeacherDTO teacherDTO)
         {

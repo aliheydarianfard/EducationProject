@@ -16,18 +16,13 @@ using Microsoft.AspNetCore.Hosting;
 namespace EductionWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CourseController : Controller
+    public class CourseController : AdminController
     {
         #region Dependance
         private readonly ICourseService _courseService = null;
         private readonly ICategoryService _categoryService = null;
         private readonly ITeacherService _teacherService = null;
-
-
-
-
         private readonly IHostingEnvironment _hosting;
-
         public CourseController(ICourseService courseService, ICategoryService categoryService, ITeacherService teacherService, IHostingEnvironment hosting)
         {
             _courseService = courseService;
@@ -56,6 +51,7 @@ namespace EductionWeb.Areas.Admin.Controllers
             var Course = await _courseService.SearchCourseByIdAsync(id);
             if (Course != null)
             {
+         
                 dTO.Name = Course.Name;
                 dTO.PublisherName = Course.PublisherName;
                 dTO.Time = Course.Time;

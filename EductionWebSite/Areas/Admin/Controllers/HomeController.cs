@@ -13,7 +13,7 @@ namespace EductionWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize]
-    public class HomeController : Controller
+    public class HomeController : AdminController
     {
         private readonly IHomeService _homeService = null;
 

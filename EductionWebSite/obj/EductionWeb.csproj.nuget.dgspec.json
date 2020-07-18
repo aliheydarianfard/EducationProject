@@ -125,7 +125,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Eduction.Data\\Eduction.Data.csproj"
+              },
+              "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj": {
+                "projectPath": "F:\\My Appliction\\Web\\EducationProject\\Shop.Core\\Eduction.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -137,6 +144,30 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.CookiePolicy": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.HttpsPolicy": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.AspNetCore.Razor.Runtime": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -144,6 +175,10 @@
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "PagingList": {
               "target": "Package",
@@ -165,6 +200,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -377,6 +415,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[3.1.5, )"

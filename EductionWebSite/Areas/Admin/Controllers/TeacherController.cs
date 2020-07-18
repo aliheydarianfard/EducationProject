@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace EductionWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class TeacherController: Controller
+    public class TeacherController: AdminController
     {
         private readonly ITeacherService _teacherService = null;
 
@@ -26,7 +26,6 @@ namespace EductionWeb.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> List(TeacherListItemDTO dTO) 
         {
-
             return View(await _teacherService.SearchTeacheryAsync(dTO.TeacherSearchName)); 
         }
         [HttpGet]
@@ -40,21 +39,11 @@ namespace EductionWeb.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Create(int? id)
         {
-            TeacherDTO dTO = new TeacherDTO();
-         
+            TeacherDTO dTO = new TeacherDTO();        
             var teacher =await _teacherService.SearchTeacherByIdAsync(id);
             dTO.BirthDay = DateTime.Now;
             if (teacher != null)
-            {
-                dTO.FirstName = teacher.FirstName;
-                dTO.LastName = teacher.LastName;
-                dTO.NationalCode = teacher.NationalCode;
-                dTO.LastDegreeOfEducation = teacher.LastDegreeOfEducation;
-                dTO.PhoneNumber = teacher.PhoneNumber;
-                dTO.Email = teacher.Email;
-                dTO.BirthDay = teacher.BirthDay;
-                dTO.Sex = teacher.Sex;
-            }
+                dTO= await _teacherService.SearchTeacherByIdAsync(id);
             return View (dTO);
         }
         [HttpPost]

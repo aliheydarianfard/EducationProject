@@ -1,4 +1,5 @@
 ﻿using Eduction.Core.Domains.BaseDomains;
+using Eduction.Core.Extension;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -39,13 +40,7 @@ namespace Eduction.Data
 
             }
         }
-        public static List<string> GetAllClassNames(this Type type)
-        {
-
-            return AppDomain.CurrentDomain.GetAssemblies().SelectMany(x => x.GetTypes())
-                    .Where(x => type.IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
-                    .Select(x => x.FullName).ToList();
-        }
+        
      
     }
 }

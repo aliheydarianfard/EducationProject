@@ -44,10 +44,11 @@ namespace Eduction.Service.Catalog.Category
 
         }
        
-        public async Task<Eduction.Core.Domains.Category> SearchCategoryByIdAsync(int? id)
+        public async Task<CategoryDTO> SearchCategoryByIdAsync(int? id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);
-            return category;
+            var DTO = category.TODTO<CategoryDTO>();
+            return DTO;
 
         }
         public async Task UpdateCategoryAsync(CategoryDTO categoryDTO)

@@ -71,7 +71,6 @@ namespace Eduction.Service.Catalog.Course
             }
             var course = courseDTO.ToEntity<Eduction.Core.Domains.Course>();
             string englishname = courseDTO.EnglishName;
-
             string CodeResult = englishname.Substring(0, 2)  +"-"+courseDTO.ID + courseDTO.TeacherID + courseDTO.CategoryID;
             course.Code = CodeResult;
             course.CategoryID = courseDTO.CategoryID;

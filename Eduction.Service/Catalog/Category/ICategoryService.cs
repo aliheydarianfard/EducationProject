@@ -10,7 +10,7 @@ namespace Eduction.Service.Catalog.Category
         Task<CategoryDTO> RegisterCategoryAsync(CategoryDTO categoryDTO);
         Task RemoveCategoryAsync(int id);
         IEnumerable<Eduction.Core.Domains.Category> SearchAllCategoryAsync();
-        Task<Core.Domains.Category> SearchCategoryByIdAsync(int? id);
+        Task<CategoryDTO> SearchCategoryByIdAsync(int? id);
         Task UpdateCategoryAsync(CategoryDTO categoryDTO);
         Task<CategoryListItemDTO> SearchCategoryAsync(string _CategorySearchName);
     }

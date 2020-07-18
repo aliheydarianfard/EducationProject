@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace EductionWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class SliderController : Controller
+    public class SliderController : AdminController
     {
         private readonly ISliderService _sliderService = null;
 

@@ -6,3 +6,10 @@ F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Debug\netcoreapp3.1
 F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Debug\netcoreapp3.1\Eduction.FrameWork.AssemblyInfo.cs
 F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Debug\netcoreapp3.1\Eduction.FrameWork.dll
 F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Debug\netcoreapp3.1\Eduction.FrameWork.pdb
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Debug\netcoreapp3.1\Eduction.Core.dll
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Debug\netcoreapp3.1\Eduction.Core.pdb
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\obj\Debug\netcoreapp3.1\Eduction.FrameWork.csproj.CopyComplete
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Debug\netcoreapp3.1\Eduction.FrameWork.runtimeconfig.json
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Debug\netcoreapp3.1\Eduction.FrameWork.runtimeconfig.dev.json
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Debug\netcoreapp3.1\Eduction.Data.dll
+F:\My Appliction\Web\EducationProject\Eduction.FrameWork\bin\Debug\netcoreapp3.1\Eduction.Data.pdb

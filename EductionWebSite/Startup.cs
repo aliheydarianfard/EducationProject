@@ -35,10 +35,7 @@ namespace EductionWeb
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddMvc(option => option.EnableEndpointRouting = false);
-			services.AddScoped<ICategoryService, CategoryService>();
-			services.AddScoped<ITeacherService, TeacherService>();
-			services.AddScoped<IHomeService, HomeService>();
-			services.AddScoped<ICourseService, CourseService>();
+			DIMethod(services);
 			services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
 			services.AddDbContextPool<IApplcationDbContext, SqlServerApplicationContext>(
 			 c => c.UseSqlServer("Data Source=.;Initial Catalog=EductionDB;Integrated Security=true;")
@@ -74,20 +71,27 @@ namespace EductionWeb
 			});
 
 			services.ConfigureApplicationCookie(options =>
-				{
-					// Cookie settings
-					options.Cookie.HttpOnly = true;
-					options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+			{
+				// Cookie settings
+				options.Cookie.HttpOnly = true;
+				options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
 
-					options.LoginPath = "/Admin/Account/Login";
-					options.AccessDeniedPath = "/Admin/Account/AccessDenied";
-					options.LogoutPath = "/Admin/Account/Logout";
-					options.SlidingExpiration = true;
-				});
+				options.LoginPath = "/Admin/Account/Login";
+				options.AccessDeniedPath = "/Admin/Account/AccessDenied";
+				options.LogoutPath = "/Admin/Account/Logout";
+				options.SlidingExpiration = true;
+			});
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}
 
-		
+		private static void DIMethod(IServiceCollection services)
+		{
+			services.AddScoped<ICategoryService, CategoryService>();
+			services.AddScoped<ITeacherService, TeacherService>();
+			services.AddScoped<IHomeService, HomeService>();
+			services.AddScoped<ICourseService, CourseService>();
+		}
+
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
 			if (env.IsDevelopment())

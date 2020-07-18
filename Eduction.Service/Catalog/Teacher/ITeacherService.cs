@@ -9,7 +9,7 @@ namespace Eduction.Service.Catalog.Teacher
         Task<TeacherDTO> RegisterTeacheryAsync(TeacherDTO teacherDTO);
         Task RemoveTeacherAsync(int id);
         IEnumerable<Core.Domains.Teacher> SearchAllTeacher();
-        Task<Core.Domains.Teacher> SearchTeacherByIdAsync(int? id);
+        Task<TeacherDTO> SearchTeacherByIdAsync(int? id);
         Task<TeacherListItemDTO> SearchTeacheryAsync(string _TeacherSearchName);
         Task UpdateCategoryAsync(TeacherDTO teacherDTO);
     }
